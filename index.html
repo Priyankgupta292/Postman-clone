@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav-bar">
+        <a href="#"><img src="images/logo.png" class="image" alt="logo"></a>
+        <a href="#" class="Home">Home</a>
+        <a href="#" class="About">About</a>
+        <a href="#" class="Contact">Contact Us</a>
+    </div>
+
+    <div class="content">
+        <h1 class="heading">Welcome To Post Master</h1>
+
+        <form action="" method="post" class="input-form">
+            <div>
+                <label for="URL">URL : </label>
+                <input type="text" name="URL" id="URL">
+            </div>
+            <div class="div2">
+                <label for="req-type">Request Type : </label>
+                <input type="radio" name="Request" id="req-type" value="GET" checked>GET
+                <input type="radio" name="Request" id="req-type" value="POST">POST
+            </div>
+
+            <div>
+                <label for="con-type">Content Type :</label>
+                <input type="radio" name="content" id="con-type1" value="custom" checked>custom
+                <input type="radio" name="content" id="con-type2" value="json">json
+            </div>
+
+            <div id="request-json">
+                <label for="json-content" class="block">Enter Request json</label>
+                <textarea name="json-content" id="json-content" cols="62" rows="5"></textarea>
+            </div>
+
+            <div id="request-custom">
+                <label for="" class="block">Enter custom Data  : </label>
+                <div class="margin">
+                key <input type="text" name="key" id="key1" class="inline">
+                value <input type="text" name="value" id="value1" class="inline">
+                <input type="button" value="Add" id="add">
+                </div>
+            </div>
+
+            <div class="submit">
+                <input type="button" value="submit" id="submit-btn">
+            </div>
+
+            <div class="res">
+                <label for="res">Response</label>
+                <textarea name="res" id="res" cols="62" rows="10"></textarea>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
